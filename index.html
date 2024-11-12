@@ -1,0 +1,149 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha de Alimentação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo-principal">Planilha de Alimentação</h1>
+        
+        <!-- Café da Manhã -->
+        <div class="card">
+            <div class="card-header" data-refeicao="cafe">
+                <h2 class="card-titulo">Café da Manhã</h2>
+            </div>
+            <div class="card-body collapse">
+                <form>
+                    <div class="form-group">
+                        <label for="cafe-horario" class="label-input">Horário:</label>
+                        <input type="time" id="cafe-horario" required class="input-text">
+                        <label for="cafe-comida" class="label-input">Comida:</label>
+                        <input type="text" id="cafe-comida" required class="input-text">
+                        <label for="cafe-peso" class="label-input">Peso (g):</label>
+                        <input type="number" id="cafe-peso" required class="input-text">
+                        <button class="add-btn" data-refeicao="cafe">Adicionar</button>
+                    </div>
+                    <div id="cafe-comidas-lista" class="comidas-lista"></div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Lanche da Manhã -->
+        <div class="card">
+            <div class="card-header" data-refeicao="lanche-manha">
+                <h2 class="card-titulo">Lanche da Manhã</h2>
+            </div>
+            <div class="card-body collapse">
+                <form>
+                    <div class="form-group">
+                        <label for="lanche-manha-horario" class="label-input">Horário:</label>
+                        <input type="time" id="lanche-manha-horario" required class="input-text">
+                        <label for="lanche-manha-comida" class="label-input">Comida:</label>
+                        <input type="text" id="lanche-manha-comida" required class="input-text">
+                        <label for="lanche-manha-peso" class="label-input">Peso (g):</label>
+                        <input type="number" id="lanche-manha-peso" required class="input-text">
+                        <button class="add-btn" data-refeicao="lanche-manha">Adicionar</button>
+                    </div>
+                    <div id="lanche-manha-comidas-lista" class="comidas-lista"></div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Almoço -->
+        <div class="card">
+            <div class="card-header" data-refeicao="almoco">
+                <h2 class="card-titulo">Almoço</h2>
+            </div>
+            <div class="card-body collapse">
+                <form>
+                    <div class="form-group">
+                        <label for="almoco-horario" class="label-input">Horário:</label>
+                        <input type="time" id="almoco-horario" required class="input-text">
+                        <label for="almoco-comida" class="label-input">Comida:</label>
+                        <input type="text" id="almoco-comida" required class="input-text">
+                        <label for="almoco-peso" class="label-input">Peso (g):</label>
+                        <input type="number" id="almoco-peso" required class="input-text">
+                        <button class="add-btn" data-refeicao="almoco">Adicionar</button>
+                    </div>
+                    <div id="almoco-comidas-lista" class="comidas-lista"></div>
+                </form>
+            </div>
+        </div>
+        
+    
+
+
+    <!-- Lanche da Tarde -->
+    <div class="card">
+        <div class="card-header" data-refeicao="lanche-tarde">
+            <h2 class="card-titulo">Lanche da Tarde</h2>
+        </div>
+        <div class="card-body collapse">
+            <form>
+                <div class="form-group">
+                    <label for="lanche-tarde-horario" class="label-input">Horário:</label>
+                    <input type="time" id="lanche-tarde-horario" required class="input-text">
+                    <label for="lanche-tarde-comida" class="label-input">Comida:</label>
+                    <input type="text" id="lanche-tarde-comida" required class="input-text">
+                    <label for="lanche-tarde-peso" class="label-input">Peso (g):</label>
+                    <input type="number" id="lanche-tarde-peso" required class="input-text">
+                    <button class="add-btn" data-refeicao="lanche-tarde">Adicionar</button>
+                </div>
+                <div id="lanche-tarde-comidas-lista" class="comidas-lista"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Jantar -->
+    <div class="card">
+        <div class="card-header" data-refeicao="jantar">
+            <h2 class="card-titulo">Jantar</h2>
+        </div>
+        <div class="card-body collapse">
+            <form>
+                <div class="form-group">
+                    <label for="jantar-horario" class="label-input">Horário:</label>
+                    <input type="time" id="jantar-horario" required class="input-text">
+                    <label for="jantar-comida" class="label-input">Comida:</label>
+                    <input type="text" id="jantar-comida" required class="input-text">
+                    <label for="jantar-peso" class="label-input">Peso (g):</label>
+                    <input type="number" id="jantar-peso" required class="input-text">
+                    <button class="add-btn" data-refeicao="jantar">Adicionar</button>
+                </div>
+                <div id="jantar-comidas-lista" class="comidas-lista"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Ceia -->
+    <div class="card">
+        <div class="card-header" data-refeicao="ceia">
+            <h2 class="card-titulo">Ceia</h2>
+        </div>
+        <div class="card-body collapse">
+            <form>
+                <div class="form-group">
+                    <label for="ceia-horario" class="label-input">Horário:</label>
+                    <input type="time" id="ceia-horario" required class="input-text">
+                    <label for="ceia-comida" class="label-input">Comida:</label>
+                    <input type="text" id="ceia-comida" required class="input-text">
+                    <label for="ceia-peso" class="label-input">Peso (g):</label>
+                    <input type="number" id="ceia-peso" required class="input-text">
+                    <button class="add-btn" data-refeicao="ceia">Adicionar</button>
+                </div>
+                <div id="ceia-comidas-lista" class="comidas-lista"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
